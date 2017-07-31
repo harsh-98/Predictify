@@ -1,3 +1,5 @@
+/********* Global Styles ************/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -21,6 +23,8 @@
 		font-size: 22px;
 	}
 }
+
+/*********** Heading **************/
 
 .main {
 	min-height: 100vh;
@@ -110,7 +114,7 @@
 
 .form-head {
 	height: 5rem;
-	background: rgba(67,86,129, 0.8);
+	background: rgba(67, 86, 129, 0.8);
 	padding: 3rem 2rem;
 	border-radius: 5px 5px 0px 0px;
 	display: flex;
@@ -127,10 +131,47 @@
 	border-radius: 0 0 5px 5px;
 }
 
+.logins {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+
+.logins h4 {
+	font-size: 1.5rem;
+	color: #dddddd;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+.login-options {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 1.5rem;
+}
+
+.login-options button {
+	font-size: 1.2rem;
+	padding: 0.75rem 1.2rem;
+	background: rgb(72,92,138);
+	color: #dddddd;
+	border: 0.05rem solid #dddddd;
+	border-radius: 0.2rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.login-options i {
+	padding-right: 0.7rem;
+}
+
 /********** Form heading ***********/
 
 .head-icon {
-	color: rgb(121,138,166);
+	color: rgb(121, 138, 166);
 	font-size: 2.8rem;
 	float: right;
 }
@@ -181,7 +222,7 @@ input:focus {
 
 form input[type="submit"] {
 	margin-top: 1.2rem;
-	background: rgb(25,185,231);
+	background: rgb(25, 185, 231);
 	padding: 0.9rem;
 	color: #eeeeee;
 	font-size: 1.3rem;
