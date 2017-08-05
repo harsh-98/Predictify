@@ -1,0 +1,82 @@
+/**************** Global Styles************/
+
+* {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+@media screen and (max-width: 1499px) {
+	html {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 1500px) and (max-width: : 1920px) {
+	html {
+		font-size: 0.90px;
+	}
+}
+
+@media screen and (min-width: 1921px) {
+	html {
+		font-size: 22px;
+	}
+}
+
+/**********HEADER************/
+
+.page-head { 
+	padding: 0.7rem;
+	width: 100%;
+	background-color: hsl(193,14%,12%);
+	color: hsl(0,0%,100%);
+}
+
+.website-name {
+	float:left;
+	height: 2.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.website-name h3 {
+	flex: 1 0 0;
+	font-weight: 400;
+	letter-spacing: 0.05rem;
+}
+
+.right-nav {
+	float: right;
+	display: flex;
+	flex-direction: row-reverse;
+	margin-right: 3rem;	
+	align-items: center;
+}
+
+.profile-pic{
+	height: 2.4rem;
+	width: auto;
+	border-radius: 50%;
+	margin-left: 2rem;
+}
+
+form.search-bar {
+	display: inline;
+	flex: 2 0 0;
+}
+
+form.search-bar input {
+	height: 2.4em;
+	width: 13rem;
+	border-radius: 25px;
+	outline: 0;
+	border: 0;
+	background-image: url('images/search.png');
+	background-repeat: no-repeat;
+	background-position: 11.5rem 0.3rem;
+	background-size: 1.5rem 1.5rem;
+	padding:0 0.5rem;	
+}
