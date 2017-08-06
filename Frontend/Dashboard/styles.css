@@ -39,7 +39,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .website-name h3 {
@@ -79,4 +80,60 @@ form.search-bar input {
 	background-position: 11.5rem 0.3rem;
 	background-size: 1.5rem 1.5rem;
 	padding:0 0.5rem;	
+}
+
+/***********LEFT NAV***************/
+
+main {
+	width: 100%;
+	display: flex;
+	height: 100vh;
+}
+
+.left-nav {
+	font-weight: 300;
+	flex: 1 0 0;
+	background-color: hsl(192,13%,16%);
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	flex-flow: column;
+}
+.main-nav ,.filter-nav {
+	font-size: 0.9rem;
+}
+
+.nav-head {
+	font-weight: 900;
+	padding: 1rem 3.5rem;
+	font-size: 0.65rem;
+	color: hsl(190,8%,31%);
+}
+
+.nav-item {
+	padding: 1rem 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: hsl(190,8%,50%);
+}
+
+.nav-item i{
+	flex: 1 0 0;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.nav-item div{ 
+	text-align: left;
+	flex: 3 0 0;
+	text-decoration: none;
+}
+
+
+
+
+
+.user-space {
+	flex: 4 0 0;
 }
