@@ -31,59 +31,57 @@
 	width: 100vw;
 }
 
-.background-image {
-	position: fixed;
-	height: 100vh;
-	width: 100vw;
-	background: linear-gradient(rgba(35, 139, 176, 0.9),
-		                        rgba(117, 122, 203, 0.99)),
-		                        url("img.jpg");
-}
+  .background-image {
+  	position: fixed;
+  	height: 100vh;
+  	width: 100vw;
+  	background: linear-gradient(rgba(35, 139, 176, 0.9),
+  		                        rgba(117, 122, 203, 0.99)),
+  		                        url("img.jpg");
+  }
 
-.main-section {
-	position: relative;
-}
+  .main-section {
+  	position: relative;
+  }
 
-.page-head {
-	height: 12rem;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #ffffff;
-	flex-direction: column;
-	padding: 1.5rem 0;
-}
+    .page-head {
+    	height: 12rem;
+    	width: 100%;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	color: #ffffff;
+    	flex-direction: column;
+    	padding: 1.5rem 0;
+    }
 
-.website-name {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	font-size: 3.2rem;
-	padding-bottom: 1rem;
-	color: #eeeeee;
-}
+      .website-name {
+      	font-family: 'Roboto', sans-serif;
+      	font-weight: 300;
+      	font-size: 3.2rem;
+      	padding-bottom: 1rem;
+      	color: #eeeeee;
+      }
 
-.first-half {
-	font-weight: 500;
-	color: #ffffff;
-}
+        .first-half {
+        	font-weight: 500;
+        	color: #ffffff;
+        }
 
-.first-letter {
-	font-weight: 600;
-	font-size: 3.5rem;
-}
+          .first-letter {
+          	font-weight: 600;
+          	font-size: 3.5rem;
+          }
 
-.description {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.2rem;
-	font-weight: 300;
-	color: #dddddd;
-	letter-spacing: 0.05rem;
-}
+      .description {
+      	font-family: 'Roboto', sans-serif;
+      	font-size: 1.2rem;
+      	font-weight: 300;
+      	color: #dddddd;
+      	letter-spacing: 0.05rem;
+      }
 
-/*************************/
 /********* FORMS *********/
-/*************************/
 
 .form-container {
 	color: white;
@@ -94,79 +92,85 @@
 	flex-wrap: wrap;
 	margin-bottom: 2rem;
 }
+  
+  .vertical-rule {
+  	width: 1px;
+  	background: #eeeeee;
+  	height: 20rem;
+  	flex: 0 0 1px;
+  }
 
-.vertical-rule {
-	width: 1px;
-	background: #eeeeee;
-	height: 20rem;
-	flex: 0 0 1px;
-}
+  @media screen and (max-width: 1110px) {
+    .vertical-rule {
+      display: none;
+    }
+  }
 
-.login-form {
-	background: transparent;
-	width: 29rem;
-}
+  .login-form {
+  	background: transparent;
+  	width: 29rem;
+  }
 
-.register-form {
-	background: transparent;
-	width: 29rem;
-}
+    .logins {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+    }
 
-.form-head {
-	height: 5rem;
-	background: rgba(67, 86, 129, 0.8);
-	padding: 3rem 2rem;
-	border-radius: 5px 5px 0px 0px;
-	display: flex;
-	justify-content: space-between;
-}
+    .logins h4 {
+      font-size: 1.5rem;
+      color: #dddddd;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+    }
 
-.form-details {
-	display: flex;
-	flex-direction: column;
-}
+      .login-options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 1.5rem;
+      }
 
-.form-body {
-	background: rgba(73,95,141, 0.75);
-	border-radius: 0 0 5px 5px;
-}
+      .login-options button {
+        font-size: 1.2rem;
+        padding: 0.75rem 1.2rem;
+        background: rgb(72,92,138);
+        color: #dddddd;
+        border: 0.05rem solid #dddddd;
+        border-radius: 0.2rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
 
-.logins {
-	display: flex;
-	flex-direction: column;
-	padding: 2rem;
-}
+      .login-options i {
+        padding-right: 0.7rem;
+      }
+      
+  .register-form {
+  	background: transparent;
+  	width: 29rem;
+  }
 
-.logins h4 {
-	font-size: 1.5rem;
-	color: #dddddd;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-}
+    .form-head {
+    	height: 5rem;
+    	background: rgba(67, 86, 129, 0.8);
+    	padding: 3rem 2rem;
+    	border-radius: 5px 5px 0px 0px;
+    	display: flex;
+    	justify-content: space-between;
+    }
 
-.login-options {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	margin-top: 1.5rem;
-}
+      .form-details {
+      	display: flex;
+      	flex-direction: column;
+      }
 
-.login-options button {
-	font-size: 1.2rem;
-	padding: 0.75rem 1.2rem;
-	background: rgb(72,92,138);
-	color: #dddddd;
-	border: 0.05rem solid #dddddd;
-	border-radius: 0.2rem;
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-}
-
-.login-options i {
-	padding-right: 0.7rem;
-}
+    .form-body {
+    	background: rgba(73,95,141, 0.75);
+    	border-radius: 0 0 5px 5px;
+    }
 
 /********** Form heading ***********/
 
@@ -197,34 +201,34 @@
 	padding: 3rem;
 }
 
-form input {
-	width: 100%;
-	border-style: none;
-	padding: 0.6rem 0 0.6rem 1rem;
-	margin: 0.6rem 0.3rem;
-	box-sizing: border-box;
-	font-size: 1.1rem;
-	border-radius: 0.25rem;
-	background: #eeeeee;
-	font-weight: 300;
-	color: #444444;
-}
+  form input {
+  	width: 100%;
+  	border-style: none;
+  	padding: 0.6rem 0 0.6rem 1rem;
+  	margin: 0.6rem 0.3rem;
+  	box-sizing: border-box;
+  	font-size: 1.1rem;
+  	border-radius: 0.25rem;
+  	background: #eeeeee;
+  	font-weight: 300;
+  	color: #444444;
+  }
 
-form input::placeholder {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	font-size: 1rem;
-}
+    form input::placeholder {
+    	font-family: 'Roboto', sans-serif;
+    	font-weight: 300;
+    	font-size: 1rem;
+    }
 
-input:focus {
-	outline: none;
-}
+    input:focus {
+    	outline: none;
+    }
 
-form input[type="submit"] {
-	margin-top: 1.2rem;
-	background: rgb(25, 185, 231);
-	padding: 0.9rem;
-	color: #eeeeee;
-	font-size: 1.3rem;
-	cursor: pointer;
-}
+    form input[type="submit"] {
+    	margin-top: 1.2rem;
+    	background: rgb(25, 185, 231);
+    	padding: 0.9rem;
+    	color: #eeeeee;
+    	font-size: 1.3rem;
+    	cursor: pointer;
+    }
