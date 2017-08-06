@@ -99,40 +99,46 @@ main {
 	display: flex;
 	flex-flow: column;
 }
+
 .main-nav ,.filter-nav {
 	font-size: 0.9rem;
 }
 
 .nav-head {
+	margin-top: 1rem;
 	font-weight: 900;
-	padding: 1rem 3.5rem;
+	padding: 0.5rem 3.5rem;
 	font-size: 0.65rem;
 	color: hsl(190,8%,31%);
 }
 
-.nav-item {
-	padding: 1rem 2.5rem;
+.nav-link {
+	transition: 0.2s ease;
+	padding: 0.5rem 2.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: hsl(190,8%,50%);
+	text-decoration: none;
 }
 
-.nav-item i{
+.nav-link i{
 	flex: 1 0 0;
 	font-size: 1.2rem;
 	text-align: center;
 }
 
-.nav-item div{ 
+.nav-link div{ 
 	text-align: left;
 	flex: 3 0 0;
 	text-decoration: none;
 }
 
+.nav-link:hover, .nav-link:active{ 
+	color:white; 
+}
 
-
-
+/**********USER SPACE*************/
 
 .user-space {
 	flex: 4 0 0;
