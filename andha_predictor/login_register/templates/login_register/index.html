@@ -29,12 +29,16 @@
 								<span class="form-heading">Login to our site</span>
 								<span class="form-description">Enter username and password to log on</span>
 							</div>
+							{% if login_message %}
+								<p class="form-description error">{{login_message}}</p>
+							{% endif %}
 							<div class="head-icon">
 								<i class="fa fa-lock"></i>
 							</div>
 						</div>
 						<div class="form-body">
-							<form action="[Action for Login FORM]">
+							<form action="{% url 'login_register:loginUser' %}" method="POST">
+								{% csrf_token %}
 								<input type="text" name="username" placeholder="Username....">
 								<input type="password" name="password" placeholder="Password....">
 								<input type="submit">
@@ -60,8 +64,8 @@
 								<span class="form-heading">Sign Up Now</span>
 								<span class="form-description">Fill the form below to get instant access</span>
 							</div>
-							{% if message %}
-								<p class="form-description error">{{message}}</p>
+							{% if reg_message %}
+								<p class="form-description error">{{reg_message}}</p>
 							{% endif %}
 							<div class="head-icon">
 								<i class="fa fa-pencil"></i>
