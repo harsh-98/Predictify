@@ -20,6 +20,7 @@
 					<p class="description">
 						Lorem Ipsum, the text describing the tagline of the website !
 					</p>
+
 				</header>
 				<main class="form-container">
 					<div class="login-form">
@@ -59,16 +60,20 @@
 								<span class="form-heading">Sign Up Now</span>
 								<span class="form-description">Fill the form below to get instant access</span>
 							</div>
+							{% if message %}
+								<p class="form-description error">{{message}}</p>
+							{% endif %}
 							<div class="head-icon">
 								<i class="fa fa-pencil"></i>
 							</div>
 						</div>
 						<div class="form-body">
-							<form action="[Action for Register FORM]">
-								<input type="text" name="first-name" placeholder="First Name">
-								<input type="text" name="last-name" placeholder="Last Name">
+							<form action="{% url 'login_register:createUser' %}" method="post">
+								{% csrf_token %}
+								<input type="text" name="first_name" placeholder="First Name">
+								<input type="text" name="last_name" placeholder="Last Name">
 								<input type="text" name="username" placeholder="Username...">
-								<input type="text" name="password" placeholder="Password...">
+								<input type="password" name="password" placeholder="Password...">
 								<input type="text" name="email" placeholder="E-mail">
 								<input type="submit">
 							</form>
