@@ -1,8 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.template import loader
 from django.shortcuts import render
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate,login
 from django.contrib.auth.models import User
 from .registerform import registerForm,loginForm
 
@@ -35,7 +35,9 @@ def loginUser(request):
 
 	user = authenticate(username = request.POST['username'],password = request.POST['password'])
 	if user is not None:
-		return HttpResponse("<h1>Dashboard</h1>")
+		login(request,user)
+		return redirect('/dashboard/')
+		# return HttpResponse("<h1>Dashboard</h1>")
 	else:
 		return render(request, 'login_register/index.html',{'login_message':'Error!'})
 
