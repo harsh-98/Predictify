@@ -1,0 +1,124 @@
+/********* Global Styles ************/
+
+* {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+@media screen and (max-width: 1499px) {
+	html {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1920px) {
+	html {
+		font-size: 0.85vw;
+	}
+}
+
+@media screen and (min-width: 1921px) {
+	html {
+		font-size: 22px;
+	}
+}
+
+/********* Quix Protal Styles **********/
+
+.nav-container {
+  position: fixed;
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+}
+
+  .menu-button {
+    position: absolute;
+    display: inline-block;
+    top: 1rem;
+    right: 1rem;
+    z-index: 5;
+  }
+
+    .menu-button span {
+      color: #bbbbbb;
+      font-size: 1.75rem;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .menu-button span:hover {
+      color: #eeeeee;
+    }
+
+  .navigate {
+    position: absolute;
+    display: inline-block;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+    .navigate span {
+      font-size: 1.8rem;
+      color: #cccccc;
+      padding: 0.8rem;
+      padding-top: 1.1rem;
+      margin-top: 2rem;
+      background: rgba(140, 140, 140, 0.7);
+      border-radius: 1px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .navigate span:hover {
+      color: #ffffff;
+    }
+
+  .left-navigate {
+    left: 0;
+  }
+
+  .right-navigate {
+    right: 0;
+  }
+
+.quiz-portal {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(24, 24, 24, 0.98),
+  		                        rgba(60, 60, 60, 1)) fixed;
+}
+
+  .quiz-head {
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #dddddd;
+  }
+
+    .page-heading {
+      padding-bottom: 2rem;
+      font-family: 'Lato';
+      font-size: 2.4rem;
+    }
+
+    .page-description {
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 1.2rem;
+      letter-spacing: 0.05rem;
+      color: #bbbbbb;
+    }
+
+  .question-container {
+    width: 80vw;
+    min-height: 30rem;
+    background: red;
+  }

@@ -1,0 +1,90 @@
+<!Doctype html>
+<html>
+	<head>
+		{% load staticfiles %}
+		<link rel="stylesheet" href="{% static 'login_register/styles.css' %}">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Login</title>
+	</head>
+	<body>
+		<section class="main">
+			<figure class="background-image"></figure>
+			<section class="main-section">
+				<header class="page-head">
+					<h3 class="website-name">
+						<span class="first-half">
+							<span class="first-letter">W</span>ebsite
+						</span> Name
+					</h3>
+					<p class="description">
+						Lorem Ipsum, the text describing the tagline of the website !
+					</p>
+
+				</header>
+				<main class="form-container">
+					<div class="login-form">
+						<div class="form-head">
+							<div class="form-details">
+								<span class="form-heading">Login to our site</span>
+								<span class="form-description">Enter username and password to log on</span>
+							</div>
+							{% if login_message %}
+								<p class="form-description error">{{login_message}}</p>
+							{% endif %}
+							<div class="head-icon">
+								<i class="fa fa-lock"></i>
+							</div>
+						</div>
+						<div class="form-body">
+							<form action="{% url 'login_register:loginUser' %}" method="POST">
+								{% csrf_token %}
+								<input type="text" name="username" placeholder="Username....">
+								<input type="password" name="password" placeholder="Password....">
+								<input type="submit">
+							</form>
+						</div>
+						<div class="logins">
+							<h4>... or login with</h4>
+							<div class="login-options">
+								<button>
+									<i class="fa fa-google-plus"></i>Google
+								</button>
+								<button>
+									<i class="fa fa-facebook"></i>Facebook
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="vertical-rule">	
+					</div>
+					<div class="register-form">
+						<div class="form-head">
+							<div class="form-details">
+								<span class="form-heading">Sign Up Now</span>
+								<span class="form-description">Fill the form below to get instant access</span>
+							</div>
+							{% if reg_message %}
+								<p class="form-description error">{{reg_message}}</p>
+							{% endif %}
+							<div class="head-icon">
+								<i class="fa fa-pencil"></i>
+							</div>
+						</div>
+						<div class="form-body">
+							<form action="{% url 'login_register:createUser' %}" method="post">
+								{% csrf_token %}
+								<input type="text" name="first_name" placeholder="First Name">
+								<input type="text" name="last_name" placeholder="Last Name">
+								<input type="text" name="username" placeholder="Username...">
+								<input type="password" name="password" placeholder="Password...">
+								<input type="text" name="email" placeholder="E-mail">
+								<input type="submit">
+							</form>
+						</div>
+					</div>
+				</main>
+			</section>	
+		</section>
+	</body>
+</html>
