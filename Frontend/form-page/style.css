@@ -107,7 +107,7 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 25rem;
+      height: 28rem;
       flex: 0 0 2rem;
       cursor: pointer;
       color: #cccccc;
@@ -123,23 +123,32 @@ main {
 
     .form-body {
       display: flex;
-      height: 25rem;
+      height: 28rem;
       background: transparent;
       flex-wrap: nowrap;
-      width: 500rem;
+      width: 1000rem;
       position: relative;
       left: 0;
       transition: left 0.5s;
     }
 
-    form input[type="text"] {
+    form input::placeholder {
+       font-family: 'Roboto', sans-serif;
+       font-weight: 300;
+       color: #999999;
+       font-size: 1.2rem;
+     }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
       text-align: center;
       border-style: none;
-      box-sizing: border-box;
       background: transparent;
       padding: 0.5rem 2rem;
       width: 34rem;
       font-size: 1.6rem;
+      box-sizing: border-box;
       font-weight: 300;
       color: #cccccc;
       border-bottom: 0.75px solid #aaaaaa;
@@ -163,7 +172,7 @@ main {
       .central-input {
         display: flex;
         flex-direction: column;
-        height: 25rem;
+        height: 28rem;
         flex-grow: 1;
         align-items: center;
         justify-content: center;
@@ -175,8 +184,9 @@ main {
         .input-label {
           font-family: 'Roboto', sans-serif;
           font-weight: 300;
-          font-size: 1.3rem;
-          padding-bottom: 2.5rem;
+          font-size: 1.45rem;
+          padding-bottom: 2rem;
+          margin-top: 1rem;
           color: #ffffff;
         }
 
