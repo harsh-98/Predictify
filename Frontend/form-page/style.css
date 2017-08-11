@@ -45,7 +45,7 @@ main {
 
   .main-header {
     height: 5rem;
-    width: 42rem;
+    width: 46rem;
   	background: rgba(67, 86, 129, 0.95);
   	padding: 3rem 3rem;
     display: flex;
@@ -95,11 +95,26 @@ main {
     }
 
   .main-form {
-    background: rgba(73, 95, 141, 0.85);
+    background: rgba(73, 95, 141, 0.9);
     padding: 0 2rem 2rem 2rem;
-    width: 48rem;
+    width: 52rem;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
   }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 25rem;
+      flex: 0 0 2rem;
+      cursor: pointer;
+      color: #cccccc;
+      font-size: 2rem;
+      padding-top: 2rem;
+      box-sizing: border-box;
+    }
 
     .active-form-content {
       width: 44rem;
@@ -144,19 +159,6 @@ main {
       flex-wrap: nowrap;
       width: 44rem;
     }
-
-      .navigation {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 25rem;
-        flex: 0 0 3rem;
-        cursor: pointer;
-        color: #cccccc;
-        font-size: 2rem;
-        padding-top: 2rem;
-        box-sizing: border-box;
-      }
 
       .central-input {
         display: flex;
@@ -272,40 +274,3 @@ main {
             input[type=radio]:checked ~ label{
               color: #0DFF92;
             }
-/*
-    .form-body {
-      margin: 1.5rem 5rem 1.5rem 3rem;
-      padding: 1rem;
-    }
-
-      .input-label {
-        padding-left: 0.75rem;
-        font-family: 'Roboto', sans-serif;
-      	font-weight: 300;
-      	font-size: 1.3rem;
-      	color: #dddddd;
-      }
-
-      form input {
-      width: 100%;
-      border-style: none;
-      padding: 0.6rem 0 0.6rem 1rem;
-      margin: 1rem 0.3rem;
-      box-sizing: border-box;
-      font-size: 1.2rem;
-      border-radius: 0.3rem;
-      background: #dddddd;
-      font-weight: 300;
-      color: #444444;
-    }
-
-      form input::placeholder {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size: 1rem;
-      }
-
-      input:focus {
-        outline: none;
-      }
-  */
