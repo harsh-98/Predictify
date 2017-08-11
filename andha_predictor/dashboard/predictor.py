@@ -5,15 +5,16 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import Ridge
 import sys
+import os
 
-def predictScore():
+def billu_scorer(data2):
     #Reading training data
-    data=pd.read_csv("./python_scripts/final-student.csv",sep=";")
-
+    data=pd.read_csv("final-student.csv",sep=";")
     #Preprocessing data
     del data["school"]
 
-    prediction_data = np.array([sys.argv[i] for i in range(1,32)])
+    prediction_data = np.array(data2)
+    # prediction_data = np.array([sys.argv[i] for i in range(1,32)])
 
     #sample data='F' 15 'U' 'GT3' 'T' 4 2 'health' 'services' 'home' 'mother' 1 3 0 'no' 'yes' 'yes' 'yes' 'yes' 'yes' 'yes' 'yes' 3 2 2 1 1 5 2 15 14
     #example python new.py 'F' 15 'U' 'GT3' 'T' 4 2 'health' 'services' 'home' 'mother' 1 3 0 'no' 'yes' 'yes' 'yes' 'yes' 'yes' 'yes' 'yes' 3 2 2 1 1 5 2 15 14
@@ -44,7 +45,7 @@ def predictScore():
     linridge=Ridge(alpha=120).fit(X,y)
 
     result["scores"]=final_prediction.values[0,29:31].tolist()
-
+    result["scores"]=[float(i) for i in result["scores"]]
 
     result["scores"].append((linridge.predict(final_prediction)[0]))
 
@@ -56,6 +57,6 @@ def predictScore():
             e=len(data[(data[i]>=0) & (data[i]<=4)])
             y=np.array([a,b,c,d,e])
             porcent = 100.*y/y.sum()
-            result["pie_charts"].append(porcent)
+            result["pie_charts"].append(porcent.tolist())
 
     return result
