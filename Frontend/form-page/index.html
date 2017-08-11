@@ -51,14 +51,36 @@
                                         <h2 class="input-label">Your Gender ?</h2>
                                         <ul class="radio-options-list">
                                           <li>
-                                            <input type="radio" id="gender-f-option" name="gender" value="male">
+                                            <input type="radio" id="gender-f-option" name="sex" value="M">
                                             <label for="gender-f-option" class="radio-label">Male</label>
                                             <div class="check"></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="gender-s-option" name="gender" value="female">
+                                            <input type="radio" id="gender-s-option" name="sex" value="F">
                                             <label for="gender-s-option" class="radio-label">Female</label>
+                                            <div class="check"><div class="inside"></div></div>
+                                          </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-element">
+                                <div class="central-input">
+                                    <div class="radio-container">
+                                        <h2 class="input-label">Your Address ?</h2>
+                                        <ul class="radio-options-list">
+                                          <li>
+                                            <input type="radio" id="address-f-option" name="address" value="R">
+                                            <label for="address-f-option" class="radio-label">Rural</label>
+                                            <div class="check"></div>
+                                          </li>
+
+                                          <li>
+                                            <input type="radio" id="address-s-option" name="address" value="U">
+                                            <label for="address-s-option" class="radio-label">Urban</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
@@ -76,8 +98,45 @@
 
                             <div class="input-element">
                                 <div class="central-input">
-                                    <label for="family-size" class="input-label">Your Family Size ?</label>
-                                    <input type="number" name="family-size" placeholder="19" min="17" max="22" required >
+                                    <div class="radio-container">
+                                        <h2 class="input-label">Your Family Size ?</h2>
+                                        <ul class="radio-options-list">
+                                          <li>
+                                            <input type="radio" id="fam-size-f-option" name="famsize" value="LE3">
+                                            <label for="fam-size-f-option" class="radio-label">Less than 3</label>
+                                            <div class="check"></div>
+                                          </li>
+
+                                          <li>
+                                            <input type="radio" id="fam-size-s-option" name="famsize" value="GT3">
+                                            <label for="fam-size-s-option" class="radio-label">Greater than 3</label>
+                                            <div class="check"><div class="inside"></div></div>
+                                          </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-element">
+                                <div class="central-input">
+                                    <div class="radio-container">
+                                        <h2 class="input-label">Your parent's cohabitation status ?</h2>
+                                        <ul class="radio-options-list">
+                                          <li>
+                                            <input type="radio" id="cohabitation-stat-f-option" name="Pstatus" value="T">
+                                            <label for="cohabitation-stat-f-option" class="radio-label">Living Together</label>
+                                            <div class="check"></div>
+                                          </li>
+
+                                          <li>
+                                            <input type="radio" id="cohabitation-stat-s-option" name="Pstatus" value="A">
+                                            <label for="cohabitation-stat-s-option" class="radio-label">Apart</label>
+                                            <div class="check"><div class="inside"></div></div>
+                                          </li>
+
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
@@ -88,31 +147,31 @@
                                         <h2 class="input-label">Your Mother's Job ?</h2>
                                         <ul class="radio-options-list">
                                           <li>
-                                            <input type="radio" id="mjob-f-option" name="motherJob" value="at-home">
+                                            <input type="radio" id="mjob-f-option" name="Mjob" value="at_home">
                                             <label for="mjob-f-option" class="radio-label">At-Home</label>
                                             <div class="check"></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="mjob-s-option" name="motherJob" value="health">
+                                            <input type="radio" id="mjob-s-option" name="Mjob" value="health">
                                             <label for="mjob-s-option" class="radio-label">Health Services</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="mjob-t-option" name="motherJob" value="teacher">
+                                            <input type="radio" id="mjob-t-option" name="Mjob" value="teacher">
                                             <label for="mjob-t-option" class="radio-label">Teacher</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="mjob-option4" name="motherJob" value="services">
+                                            <input type="radio" id="mjob-option4" name="Mjob" value="services">
                                             <label for="mjob-option4" class="radio-label">Services</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="mjob-option5" name="motherJob" value="other">
+                                            <input type="radio" id="mjob-option5" name="Mjob" value="other">
                                             <label for="mjob-option5" class="radio-label">Other</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
@@ -127,31 +186,31 @@
                                         <h2 class="input-label">Your Father's Job ?</h2>
                                         <ul class="radio-options-list">
                                           <li>
-                                            <input type="radio" id="fjob-f-option" name="fathersJob" value="at-home">
+                                            <input type="radio" id="fjob-f-option" name="Fjob" value="at_home">
                                             <label for="fjob-f-option" class="radio-label">At-Home</label>
                                             <div class="check"></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="fjob-s-option" name="fathersJob" value="health">
+                                            <input type="radio" id="fjob-s-option" name="Fjob" value="health">
                                             <label for="fjob-s-option" class="radio-label">Health Services</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="fjob-t-option" name="fathersJob" value="teacher">
+                                            <input type="radio" id="fjob-t-option" name="Fjob" value="teacher">
                                             <label for="fjob-t-option" class="radio-label">Teacher</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="fjob-option4" name="fathersJob" value="services">
+                                            <input type="radio" id="fjob-option4" name="Fjob" value="services">
                                             <label for="fjob-option4" class="radio-label">Services</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="fjob-option5" name="fathersJob" value="other">
+                                            <input type="radio" id="fjob-option5" name="Fjob" value="other">
                                             <label for="fjob-option5" class="radio-label">Other</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
@@ -166,25 +225,25 @@
                                         <h2 class="input-label">Reason For Selecting School ?</h2>
                                         <ul class="radio-options-list">
                                           <li>
-                                            <input type="radio" id="school-reason-f-option" name="school-reason" value="Close to School">
+                                            <input type="radio" id="school-reason-f-option" name="reason" value="Close to School">
                                             <label for="school-reason-f-option" class="radio-label">Close To School</label>
                                             <div class="check"></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="school-reason-s-option" name="school-reason" value="Reputation of School">
+                                            <input type="radio" id="school-reason-s-option" name="reason" value="Reputation of School">
                                             <label for="school-reason-s-option" class="radio-label">Reputation of School</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="school-reason-t-option" name="school-reason" value="Course Preference">
+                                            <input type="radio" id="school-reason-t-option" name="reason" value="Course Preference">
                                             <label for="school-reason-t-option" class="radio-label">Course Preference</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="school-reason-option4" name="school-reason" value="Other">
+                                            <input type="radio" id="school-reason-option4" name="reason" value="Other">
                                             <label for="school-reason-option4" class="radio-label">Other</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
@@ -228,25 +287,25 @@
                                         <h2 class="input-label">Time taken to travel from home to school ?</h2>
                                         <ul class="radio-options-list">
                                           <li>
-                                            <input type="radio" id="time-f-option" name="time-home-school" value="<15 min">
+                                            <input type="radio" id="time-f-option" name="traveltime" value="1">
                                             <label for="time-f-option" class="radio-label">< 15min</label>
                                             <div class="check"></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="time-s-option" name="time-home-school" value="15 to 30 min">
+                                            <input type="radio" id="time-s-option" name="traveltime" value="2">
                                             <label for="time-s-option" class="radio-label">15 to 30 Min</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="time-t-option" name="time-home-school" value="30 min to 1 hour">
+                                            <input type="radio" id="time-t-option" name="traveltime" value="3">
                                             <label for="time-t-option" class="radio-label">30 min to 1 hour</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="time-t-option" name="time-home-school" value="> 1 hour">
+                                            <input type="radio" id="time-t-option" name="traveltime" value="4">
                                             <label for="time-t-option" class="radio-label">> 1 Hour</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
@@ -262,25 +321,25 @@
                                         <h2 class="input-label">Your weekly study time ?</h2>
                                         <ul class="radio-options-list">
                                           <li>
-                                            <input type="radio" id="time-f-option" name="study-time" value="<2 hours">
+                                            <input type="radio" id="study-time-f-option" name="studytime" value="1">
                                             <label for="study-time-f-option" class="radio-label">< 2 hours</label>
                                             <div class="check"></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="study-time-s-option" name="study-time" value="2 to 5 hours">
+                                            <input type="radio" id="study-time-s-option" name="studytime" value="2">
                                             <label for="study-time-s-option" class="radio-label">2 to 5 hours</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="study-time-t-option" name="study-time" value="5 to 20 hours">
+                                            <input type="radio" id="study-time-t-option" name="studytime" value="3">
                                             <label for="study-time-t-option" class="radio-label">5 to 10 hours</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="study-time-t-option" name="study-time" value="> 10 hours">
+                                            <input type="radio" id="study-time-t-option" name="studytime" value="4">
                                             <label for="study-time-t-option" class="radio-label">> 10 Hours</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
@@ -293,7 +352,7 @@
                             <div class="input-element">
                                 <div class="central-input">
                                     <label for="family-size" class="input-label">No of times You Failed in any Subject ?</label>
-                                    <input type="number" name="family-size" placeholder="" min="0" max="100" required >
+                                    <input type="number" name="failures" placeholder="" min="0" max="100" required >
                                 </div>
                             </div>
 
@@ -303,13 +362,13 @@
                                         <h2 class="input-label">Do You recieve any extra educational data from school ?</h2>
                                         <ul class="radio-options-list">
                                           <li>
-                                            <input type="radio" id="edu-data-f-option" name="extra-school-data" value="yes">
+                                            <input type="radio" id="edu-data-f-option" name="schoolsup" value="yes">
                                             <label for="edu-data-f-option" class="radio-label">YES</label>
                                             <div class="check"></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="edu-data-s-option" name="extra-school-data" value="no">
+                                            <input type="radio" id="edu-data-s-option" name="schoolsup" value="no">
                                             <label for="edu-data-s-option" class="radio-label">NO</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
@@ -325,14 +384,36 @@
                                         <h2 class="input-label">Have You enrolled in extra paid classes within the course ?</h2>
                                         <ul class="radio-options-list">
                                           <li>
-                                            <input type="radio" id="paid-class-f-option" name="extra-paid-class" value="yes">
+                                            <input type="radio" id="paid-class-f-option" name="paid" value="yes">
                                             <label for="paid-class-f-option" class="radio-label">YES</label>
                                             <div class="check"></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="paid-class-s-option" name="extra-paid-class" value="no">
+                                            <input type="radio" id="paid-class-s-option" name="paid" value="no">
                                             <label for="paid-class-s-option" class="radio-label">NO</label>
+                                            <div class="check"><div class="inside"></div></div>
+                                          </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-element">
+                                <div class="central-input">
+                                    <div class="radio-container">
+                                        <h2 class="input-label">Do you have family education support ?</h2>
+                                        <ul class="radio-options-list">
+                                          <li>
+                                            <input type="radio" id="paid-class-f-option" name="famsup" value="yes">
+                                            <label for="famsup-class-f-option" class="radio-label">YES</label>
+                                            <div class="check"></div>
+                                          </li>
+
+                                          <li>
+                                            <input type="radio" id="famsup-class-s-option" name="famsup" value="no">
+                                            <label for="famsup-class-s-option" class="radio-label">NO</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
 
@@ -347,13 +428,13 @@
                                         <h2 class="input-label">Do you participate in extra curricular activities ?</h2>
                                         <ul class="radio-options-list">
                                           <li>
-                                            <input type="radio" id="co-curricular-f-option" name="co-curricular" value="yes">
+                                            <input type="radio" id="co-curricular-f-option" name="activities" value="yes">
                                             <label for="co-curricular-f-option" class="radio-label">YES</label>
                                             <div class="check"></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="co-curricular-s-option" name="co-curricular" value="no">
+                                            <input type="radio" id="co-curricular-s-option" name="activities" value="no">
                                             <label for="co-curricular-s-option" class="radio-label">NO</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
@@ -369,13 +450,13 @@
                                         <h2 class="input-label">Do you want to pursue higher education ?</h2>
                                         <ul class="radio-options-list">
                                           <li>
-                                            <input type="radio" id="higher-edu-f-option" name="higher-edu" value="yes">
+                                            <input type="radio" id="higher-edu-f-option" name="higher" value="yes">
                                             <label for="higher-edu-f-option" class="radio-label">YES</label>
                                             <div class="check"></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="higher-edu-s-option" name="higher-edu" value="no">
+                                            <input type="radio" id="higher-edu-s-option" name="higher" value="no">
                                             <label for="higher-edu-s-option" class="radio-label">NO</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
@@ -391,13 +472,13 @@
                                         <h2 class="input-label">Do you Internet connection at home ?</h2>
                                         <ul class="radio-options-list">
                                           <li>
-                                            <input type="radio" id="internet-conn-f-option" name="internet-conn" value="yes">
+                                            <input type="radio" id="internet-conn-f-option" name="internet" value="yes">
                                             <label for="internet-conn-f-option" class="radio-label">YES</label>
                                             <div class="check"></div>
                                           </li>
 
                                           <li>
-                                            <input type="radio" id="internet-conn-s-option" name="internet-conn" value="no">
+                                            <input type="radio" id="internet-conn-s-option" name="internet" value="no">
                                             <label for="internet-conn-s-option" class="radio-label">NO</label>
                                             <div class="check"><div class="inside"></div></div>
                                           </li>
@@ -407,14 +488,28 @@
                                 </div>
                             </div>
 
+                            <div class="input-element">
+                                <div class="central-input">
+                                    <label for="marks" class="input-label">Free time you get after school (1: Very low 5: Very-high)?</label>
+                                    <input type="number" name="freetime" max="5" min="1">
+                                </div>
+                            </div>
+
+                            <div class="input-element">
+                                <div class="central-input">
+                                    <label for="marks" class="input-label">How often do you go out with friends (1: Very low 5: Very-high)?</label>
+                                    <input type="number" name="goout" max="5" min="1">
+                                </div>
+                            </div>
+
 
                             <div class="input-element">
                                 <div class="central-input">
                                     <label for="marks" class="input-label">Your first exam marks ?</label>
-                                    <input type="number" name="marks">
+                                    <input type="number" name="G1">
                                     <br>
                                     <label for="tot-marks" class="input-label">Total Marks</label>
-                                    <input type="number" name="tot-marks">
+                                    <input type="number" name="G1tot">
                                 </div>
                             </div>
 
@@ -422,10 +517,10 @@
                             <div class="input-element">
                                 <div class="central-input">
                                     <label for="marks" class="input-label">Your Second exam marks ?</label>
-                                    <input type="number" name="marks">
+                                    <input type="number" name="G2">
                                     <br>
                                     <label for="tot-marks" class="input-label">Total Marks</label>
-                                    <input type="number" name="tot-marks">
+                                    <input type="number" name="G2tot">
                                 </div>
                             </div>
 

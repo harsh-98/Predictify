@@ -1,5 +1,5 @@
 window.onload = function() {
-    const WIDTH = 44
+    const WIDTH = 44;
     let nextInput = function() {
         let formBody = document.getElementsByClassName("form-body")[0];
         let maxOffset = document.getElementsByClassName("input-element").length * 44;
@@ -24,7 +24,7 @@ window.onload = function() {
                 nextInput()
                 break;
             case 37:
-                nextInput()
+                previousInput()
                 break;
             case 9:
                 e.preventDefault();

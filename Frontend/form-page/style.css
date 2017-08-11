@@ -108,7 +108,7 @@ main {
       justify-content: center;
       align-items: center;
       height: 28rem;
-      flex: 0 0 2rem;
+      flex: 0 0 3rem;
       cursor: pointer;
       color: #cccccc;
       font-size: 2rem;
@@ -126,7 +126,7 @@ main {
       height: 28rem;
       background: transparent;
       flex-wrap: nowrap;
-      width: 1000rem;
+      width: 1500rem;
       position: relative;
       left: 0;
       transition: left 0.5s;
@@ -176,7 +176,7 @@ main {
         flex-grow: 1;
         align-items: center;
         justify-content: center;
-        margin: 0 3rem;
+        width: 44rem;
       }
 
 /********** Form Input Styles *********/
