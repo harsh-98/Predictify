@@ -28,8 +28,7 @@
 
 .nav-container {
   position: fixed;
-  z-index: 2;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -38,7 +37,7 @@
     display: inline-block;
     top: 1rem;
     right: 1rem;
-    z-index: 5;
+    z-index: 500;
   }
 
     .menu-button span {
@@ -58,6 +57,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    z-index: 10;
   }
 
     .navigate span {
@@ -84,18 +84,23 @@
     right: 0;
   }
 
+
+.main-container {
+  position: absolute;
+}
+
 .quiz-portal {
   width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(rgba(24, 24, 24, 0.98),
-  		                        rgba(60, 60, 60, 1)) fixed;
+  background: rgba(0, 0, 0, 0.85); fixed;
+  position: relative;
 }
 
   .quiz-head {
-    height: 15rem;
+    height: 18rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +111,7 @@
     .page-heading {
       padding-bottom: 2rem;
       font-family: 'Lato';
-      font-size: 2.4rem;
+      font-size: 2.6rem;
     }
 
     .page-description {
@@ -117,8 +122,108 @@
       color: #bbbbbb;
     }
 
+  .question-containers {
+    width: 75vw;
+    height: 35rem;
+    background: transparent;
+    border-radius: 0.4rem;
+  }
+
   .question-container {
-    width: 80vw;
+    width: 75vw;
     min-height: 30rem;
-    background: red;
+    background: transparent;
+    border-radius: 0.4rem;
+    position: absolute;
+    display: none;
+  }
+
+    .question {
+      height: 9rem;
+      background: rgba(10, 10, 10, 0.7);
+      padding: 1.5rem;
+    }
+
+      .question-title {
+        font-family: 'Roboto';
+        font-size: 1.5rem;
+        color: #cccccc;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        overflow: hidden;
+      }
+
+      .question-description {
+        font-family: 'Roboto';
+        font-size: 1.25rem;
+        font-weight: 300;
+        color: #cccccc;
+        padding: 1rem 0 0 2rem;
+      }
+
+    .option-container {
+      min-height: 14rem;
+      background: rgba(10, 10, 10, 0.5);
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+      .options {
+        flex-basis: 50%;
+        min-height: 6rem;
+        padding: 2rem 2rem;
+        box-sizing: border-box;
+      }
+
+      .option-text {
+        color: #dddddd;
+        display: flex;
+        align-items: center;
+      }
+
+        .option-label {
+          font-family: 'Roboto';
+          font-weight: 300;
+          font-size: 1.2rem;
+          padding-left: 1.6rem;
+        }
+
+          .option-label span {
+            font-weight: 400;
+            font-size: 1.3rem;
+          }
+
+        .check-box {
+          display: inline-flex;
+          width: 1.8rem;
+          height: 1.8rem;
+          border-radius: 100%;
+          border: 0.3rem solid #aaaaaa;
+          margin-left: 1rem;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        .checked {
+          color: #0DFF92;
+          border-color: #0DFF92;
+        }
+
+          #checked {
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 100%;
+            background: #0DFF92;
+          }
+
+  .submit-button button {
+    border-style: none;
+    padding: 0.9rem 2rem;
+    font-size: 1.4rem;
+    font-family: 'Roboto';
+    background: #333333;
+    color: #cccccc;
+    cursor: pointer;
+    border: 1px solid #999999;
   }
